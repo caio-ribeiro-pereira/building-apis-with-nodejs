@@ -4,7 +4,8 @@
   "description": "Task list API",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js"
+    "start": "babel-node index.js",
+    "test": "NODE_ENV=test mocha test/**/*.js"
   },
   "author": "Caio Ribeiro Pereira",
   "dependencies": {
@@ -19,5 +20,11 @@
     "passport-jwt": "^2.0.0",
     "sequelize": "^3.19.2",
     "sqlite3": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-register": "^6.5.2",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0"
   }
 }
