@@ -8,6 +8,12 @@
     "apidoc": "apidoc -i routes/ -o public/apidoc",
     "test": "NODE_ENV=test mocha test/**/*.js"
   },
+  "apidoc": {
+    "name": "Node Task API - Documentation",
+    "template": {
+      "forceLanguage": "en"
+    }
+  },
   "author": "Caio Ribeiro Pereira",
   "dependencies": {
     "babel-cli": "^6.5.1",
