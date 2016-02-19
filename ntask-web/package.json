@@ -1,0 +1,21 @@
+{
+  "name": "ntask-web",
+  "version": "1.0.0",
+  "description": "NTask web client application",
+  "scripts": {
+    "start": "npm run build && npm run server",
+    "server": "http-server public -p 3001",
+    "build": "npm run browserify && npm run uglify",
+    "browserify": "browserify src -t babelify -o public/js/app.js",
+    "uglify": "uglify -s public/js/app.js -o public/js/app.min.js"
+  },
+  "author": "Caio Ribeiro Pereira",
+  "dependencies": {
+    "babelify": "^7.2.0",
+    "browser-request": "^0.3.3",
+    "browserify": "^13.0.0",
+    "http-server": "^0.9.0",
+    "tiny-emitter": "^1.0.2",
+    "uglify": "^0.1.5"
+  }
+}
