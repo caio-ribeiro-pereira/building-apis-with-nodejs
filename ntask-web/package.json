@@ -9,6 +9,7 @@
   },
   "author": "Caio Ribeiro Pereira",
   "dependencies": {
+    "babel-preset-es2015": "^6.5.0",
     "babelify": "^7.2.0",
     "browser-request": "^0.3.3",
     "browserify": "^13.0.0",
