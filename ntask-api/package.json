@@ -4,9 +4,10 @@
   "description": "Task list API",
   "main": "index.js",
   "scripts": {
-    "start": "npm run apidoc && babel-node index.js",
-    "apidoc": "apidoc -i routes/ -o public/apidoc",
-    "test": "NODE_ENV=test mocha test/**/*.js"
+    "start": "npm run apidoc && npm run clusters",
+    "clusters": "babel-node clusters.js",
+    "test": "NODE_ENV=test mocha test/**/*.js",
+    "apidoc": "apidoc -i routes/ -o public/apidoc"
   },
   "apidoc": {
     "name": "Node Task API - Documentation",
@@ -20,9 +21,11 @@
     "babel-preset-es2015": "^6.5.0",
     "bcrypt": "^0.8.5",
     "body-parser": "^1.15.0",
+    "compression": "^1.6.1",
     "consign": "^0.1.2",
     "cors": "^2.7.1",
     "express": "^4.13.4",
+    "helmet": "^1.1.0",
     "jwt-simple": "^0.4.1",
     "morgan": "^1.6.1",
     "passport": "^0.3.2",

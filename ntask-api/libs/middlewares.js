@@ -2,6 +2,7 @@ import bodyParser from "body-parser";
 import express from "express";
 import morgan from "morgan";
 import cors from "cors";
+import helmet from "helmet";
 import logger from "./logger.js";
 
 module.exports = app => {
@@ -14,6 +15,7 @@ module.exports = app => {
       }
     }
   }));
+  app.use(helmet());
   app.use(cors({
     origin: ["http://localhost:3001"],
     methods: ["GET", "POST", "PUT", "DELETE"],
