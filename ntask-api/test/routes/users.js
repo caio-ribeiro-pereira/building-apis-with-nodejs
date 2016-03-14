@@ -1,6 +1,6 @@
 import jwt from "jwt-simple";
 
-describe("Routes: Tasks", () => {
+describe("Routes: Users", () => {
   const Users = app.db.models.Users;
   const jwtSecret = app.libs.config.jwtSecret;
   let token;
