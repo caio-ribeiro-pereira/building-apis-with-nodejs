@@ -15,13 +15,13 @@ module.exports = app => {
      * @apiSuccess {Boolean} tasks.done Task is done?
      * @apiSuccess {Date} tasks.updated_at Update's date
      * @apiSuccess {Date} tasks.created_at Register's date
-     * @apiSuccess {Number} tasks.user_id Id do usuário
+     * @apiSuccess {Number} tasks.user_id User id
      * @apiSuccessExample {json} Success
      *    HTTP/1.1 200 OK
      *    [{
      *      "id": 1,
      *      "title": "Study",
-     *      "done": false
+     *      "done": false,
      *      "updated_at": "2016-02-10T15:46:51.778Z",
      *      "created_at": "2016-02-10T15:46:51.778Z",
      *      "user_id": 1
@@ -49,7 +49,7 @@ module.exports = app => {
      *    {"title": "Study"}
      * @apiSuccess {Number} id Task id
      * @apiSuccess {String} title Task title
-     * @apiSuccess {Boolean} done=false Task is done?
+     * @apiSuccess {Boolean} done false Task is done?
      * @apiSuccess {Date} updated_at Update's date
      * @apiSuccess {Date} created_at Register's date
      * @apiSuccess {Number} user_id User id
