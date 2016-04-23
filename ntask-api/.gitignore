@@ -1,6 +1,7 @@
-.DS_Store
-npm-debug.log
 node_modules
+npm-debug.log
 ntask.sqlite
-public
-logs
+ntask_test.sqlite
+.DS_Store
+public/apidoc
+logs/*.log
