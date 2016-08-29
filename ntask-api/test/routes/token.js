@@ -9,7 +9,7 @@ describe("Routes: Token", () => {
           email: "john@mail.net",
           password: "12345"
         }))
-        .then(done());
+        .then(() => done());
     });
     describe("status 200", () => {
       it("returns authenticated user token", done => {
